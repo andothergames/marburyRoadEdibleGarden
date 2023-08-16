@@ -1,0 +1,100 @@
+
+/* ----NOTES---- */
+/*font names with more than one word need to be surrounded by quotes*/
+/* use em to resize relative to the size of the font*/
+
+
+/*COLOUR PALETTE*/
+
+
+/*FONTS*/
+
+@font-face {
+    font-family: 'droidSans';
+    src:url(fonts/DroidSans.ttf);  
+}
+@font-face {
+
+    font-family: 'droidSansBold';
+    src:url(fonts/DroidSans-Bold.ttf);
+  }
+
+
+/*CONTENT*/
+
+
+
+
+body {
+    font-family:"droidSans";
+    background-color: #a5face;
+    color: darkcyan;
+    font-size:12pt;
+}
+
+
+/*H TAGS*/
+h1 {
+    font-family:"droidSansBold";
+    font-size:1.4em;
+}
+
+h2 {
+    font-family:"droidSansBold";
+    font-size:1.2em;
+    color:darkblue;
+}
+
+/*bannerImage*/
+
+
+/*menuBar*/
+.menu {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}
+
+#menuList {
+    overflow: hidden;
+    list-style-type: none;
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: aliceblue;
+    border-style: solid;
+    border-width: 2px;
+    border-color: aliceblue;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    padding: 6px;
+}
+
+
+li a {
+    list-style-type: none;
+    float: left;
+    /*this makes things next to each other*/
+    border-right: solid;
+    border-color: #72c4a4;
+    display: block;
+    color: darkcyan;
+    padding: 14px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #72c4a4;
+    color: aliceblue;
+}
+
+li a:active {
+    color: deeppink;
+}
+
+.form {
+    align:center;
+}
