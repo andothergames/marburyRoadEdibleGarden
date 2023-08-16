@@ -1,9 +1,4 @@
 
-/* ----NOTES---- */
-/*font names with more than one word need to be surrounded by quotes*/
-/* use em to resize relative to the size of the font*/
-
-
 /*COLOUR PALETTE*/
 
 
@@ -20,10 +15,72 @@
   }
 
 
-/*CONTENT*/
 
 
 
+
+
+/*SIDEBARS*/
+
+.leftSide {
+    width: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 0; 
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    float:left; 
+    display:inline;
+  }
+
+  .rightSide {
+    width: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 0; 
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    float:right; 
+    display:inline;
+  }
+
+
+
+
+/* .bannerLeft {
+    align:left;
+    display: inline-block;
+} */
+
+/* .bannerRight {
+    align:right;
+    display: inline-block;
+} */
+
+.logo {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.worm {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:80px;
+  }
+
+.main {
+    margin-left: 160px;
+    margin-right: 160px;
+    padding: 0px 10px;
+     float:right;  
+    display:inline;
+  }
 
 body {
     font-family:"droidSans";
@@ -45,7 +102,6 @@ h2 {
     color:darkblue;
 }
 
-/*bannerImage*/
 
 
 /*menuBar*/
@@ -53,9 +109,7 @@ h2 {
     display: inline-block;
 }
 
-.center {
-    text-align: center;
-}
+
 
 #menuList {
     overflow: hidden;
@@ -95,6 +149,10 @@ li a:active {
     color: deeppink;
 }
 
-.form {
-    align:center;
+
+.footer {
+    padding-top:0px;
 }
+
+
+
