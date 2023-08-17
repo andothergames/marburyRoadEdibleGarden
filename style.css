@@ -17,12 +17,10 @@
 
 
 
-
-
-
 /*SIDEBARS*/
+/* Took ages to make the side bar images on day one then found out background image repeat exists */
 
-.leftSide {
+/* .leftSide {
     width: 160px;
     position: absolute;
     z-index: 1;
@@ -44,37 +42,22 @@
     padding-top: 20px;
     float:right; 
     display:inline;
-  }
+  } */
 
 
-
-
-/* .bannerLeft {
-    align:left;
-    display: inline-block;
-} */
-
-/* .bannerRight {
-    align:right;
-    display: inline-block;
-} */
-
-.logo {
-  width: 30%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  body {
+    background-image: url("assets/soilLeft.png"), url("assets/soilRight.png");
+    background-repeat: repeat-y, repeat-y; 
+    background-position: left top, right top;
+    font-family:"droidSans";
+    background-color:#FBF1F0;
+    color:#782D16;
+    font-size:12pt;
 }
 
-.worm {
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top:80px;
-  }
-
 .main {
+    background-image: url("/assets/leafBorder.png");
+    background-repeat: repeat-y;
     margin-left: 160px;
     margin-right: 160px;
     padding: 0px 10px;
@@ -82,33 +65,51 @@
     display:inline;
   }
 
-body {
-    font-family:"droidSans";
-    background-color: #a5face;
-    color: darkcyan;
-    font-size:12pt;
+.logo {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.gallery {
+    opacity: 0.8;
+}
+
+.worm {
+    width: 100%;
+    display: block;
+    padding-top:60px;
+    padding-bottom:20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .center {
+    justify-content: center;
+}
+
+
+
 
 
 /*H TAGS*/
 h1 {
     font-family:"droidSansBold";
     font-size:1.4em;
+    color:#A3682A;
+    padding-top:20px;
 }
 
 h2 {
     font-family:"droidSansBold";
     font-size:1.2em;
-    color:darkblue;
+    color:#A3682A;
 }
 
 
 
 /*menuBar*/
-.menu {
-    display: inline-block;
-}
-
 
 
 #menuList {
@@ -117,32 +118,30 @@ h2 {
     max-width:100%;
     margin-left:auto;
     margin-right:auto;
-    background-color: aliceblue;
-    border-style: solid;
-    border-width: 2px;
-    border-color: aliceblue;
-    border-radius: 6px;
     margin-top: 20px;
-    margin-bottom: 6px;
+    margin-bottom: 20px;
     padding: 6px;
 }
 
 
 li a {
     list-style-type: none;
-    float: left;
-    /*this makes things next to each other*/
-    border-right: solid;
-    border-color: #72c4a4;
+    float: left; /*this makes things next to each other*/
     display: block;
-    color: darkcyan;
+    color: #B54321;
+    margin:10px;
     padding: 14px;
     text-decoration: none;
+    background-color: antiquewhite;
+    border-style: solid;
+    border-width: 2px;
+    border-color: antiquewhite;
+    border-radius: 10px;
 }
 
 li a:hover {
-    background-color: #72c4a4;
-    color: aliceblue;
+    background-color:#7FB293;
+    color: antiquewhite;
 }
 
 li a:active {
