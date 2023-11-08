@@ -1,157 +1,135 @@
-
 /*COLOUR PALETTE*/
 
 
 /*FONTS*/
 
 @font-face {
-    font-family: 'droidSans';
-    src:url(fonts/DroidSans.ttf);  
+  font-family: 'droidSans';
+  src: url(fonts/DroidSans.ttf);
 }
+
 @font-face {
 
-    font-family: 'droidSansBold';
-    src:url(fonts/DroidSans-Bold.ttf);
-  }
-
-
-
-
-/*SIDEBARS*/
-/* Took ages to make the side bar images on day one then found out background image repeat exists */
-
-/* .leftSide {
-    width: 160px;
-    position: absolute;
-    z-index: 1;
-    top: 0; 
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-    float:left; 
-    display:inline;
-  }
-
-  .rightSide {
-    width: 160px;
-    position: absolute;
-    z-index: 1;
-    top: 0; 
-    right: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-    float:right; 
-    display:inline;
-  } */
-
-
-  body {
-    background-image: url("assets/soilLeft.png"), url("assets/soilRight.png");
-    background-repeat: repeat-y, repeat-y; 
-    background-position: left top, right top;
-    font-family:"droidSans";
-    background-color:#FBF1F0;
-    color:#782D16;
-    font-size:12pt;
+  font-family: 'droidSansBold';
+  src: url(fonts/DroidSans-Bold.ttf);
 }
 
-.main {
-    background-image: url("/assets/leafBorder.png");
-    background-repeat: repeat-y;
-    margin-left: 160px;
-    margin-right: 160px;
-    padding: 0px 10px;
-     float:right;  
-    display:inline;
-  }
+/*BODY*/
+
+body {
+  font-family: "droidSans";
+  background-color: #FBF1F0;
+  color: #782D16;
+  font-size: 12pt;
+  width: 100%;
+}
+
+/*HOMEPAGE BANNER*/
+
+.topBar {
+  background-color: #FBF1F0;
+  width:100%vw;
+  padding-top:5px;
+  padding-bottom: 5px;
+  margin-top:0px;
+  position:sticky;
+  top:0px;
+}
+
+.banner {
+  position: relative;
+  margin-top:-50px;
+  /* left:0; */
+  top:0;
+ 
+}
+
+.soil {
+  max-width: 100%;
+  position: relative;
+  margin-left: 0px;
+  margin-top:-50px;
+  left:0;
+  top:0;
+  z-index: -2;
+}
 
 .logo {
-  width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 160px;
+  display:absolute;
+  float:right;
+  margin-top:-0px;
+  margin-left:auto;
+  margin-right:25px;
+  top: 20px;
+  left: 30px;
+ 
 }
 
+/* TRY Z INDEX STUFF  */
+
+/* MENU */
+
+#menuList {
+  /* background-color: #FBF1F0; */
+  overflow: hidden;
+  list-style-type: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+li a {
+  font-family: "droidSans";
+  float: right;
+  display: block;
+  padding-left: 30px;
+  text-decoration: none;
+  color: #B54321;
+}
+
+li a:active {
+  color: #29cb6d;
+}
+
+li a:hover {
+  color: #FFEE00;
+}
+
+
 .gallery {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .worm {
-    width: 100%;
-    display: block;
-    padding-top:60px;
-    padding-bottom:20px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .center {
-    justify-content: center;
+  width: 100%;
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-
-
+.center {
+  justify-content: center;
+}
 
 
 /*H TAGS*/
 h1 {
-    font-family:"droidSansBold";
-    font-size:1.4em;
-    color:#A3682A;
-    padding-top:20px;
+  font-family: "droidSansBold";
+  font-size: 1.4em;
+  color: #A3682A;
+  padding-top: 20px;
 }
 
 h2 {
-    font-family:"droidSansBold";
-    font-size:1.2em;
-    color:#A3682A;
+  font-family: "droidSansBold";
+  font-size: 1.2em;
+  color: #A3682A;
 }
-
-
-
-/*menuBar*/
-
-
-#menuList {
-    overflow: hidden;
-    list-style-type: none;
-    max-width:100%;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 6px;
-}
-
-
-li a {
-    list-style-type: none;
-    float: left; /*this makes things next to each other*/
-    display: block;
-    color: #B54321;
-    margin:10px;
-    padding: 14px;
-    text-decoration: none;
-    background-color: antiquewhite;
-    border-style: solid;
-    border-width: 2px;
-    border-color: antiquewhite;
-    border-radius: 10px;
-}
-
-li a:hover {
-    background-color:#7FB293;
-    color: antiquewhite;
-}
-
-li a:active {
-    color: deeppink;
-}
-
 
 .footer {
-    padding-top:0px;
+  padding-top: 0px;
 }
-
-
-
