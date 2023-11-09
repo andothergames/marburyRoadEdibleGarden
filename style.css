@@ -22,104 +22,14 @@ body {
   color: #782D16;
   font-size: 12pt;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-/*HOMEPAGE BANNER*/
-
-.topBar {
-  background-color: #FBF1F0;
-  width:100%vw;
-  padding-top:5px;
-  padding-bottom: 5px;
-  margin-top:0px;
-  position:sticky;
-  top:0px;
-}
-
-.banner {
-  position: relative;
-  margin-top:-50px;
-  /* left:0; */
-  top:0;
- 
-}
-
-.soil {
-  max-width: 100%;
-  position: relative;
-  margin-left: 0px;
-  margin-top:-50px;
-  left:0;
-  top:0;
-  z-index: -2;
-}
-
-.logo {
-  width: 160px;
-  display:absolute;
-  float:right;
-  margin-top:-0px;
-  margin-left:auto;
-  margin-right:25px;
-  top: 20px;
-  left: 30px;
- 
-}
-
-/* TRY Z INDEX STUFF  */
-
-/* MENU */
-
-#menuList {
-  /* background-color: #FBF1F0; */
-  overflow: hidden;
-  list-style-type: none;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: auto;
-  margin-right: 20px;
-}
-
-li a {
-  font-family: "droidSans";
-  float: right;
-  display: block;
-  padding-left: 30px;
-  text-decoration: none;
-  color: #B54321;
-}
-
-li a:active {
-  color: #29cb6d;
-}
-
-li a:hover {
-  color: #FFEE00;
-}
-
-
-.gallery {
-  opacity: 0.8;
-}
-
-.worm {
-  width: 100%;
-  display: block;
-  padding-top: 60px;
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.center {
-  justify-content: center;
-}
-
 
 /*H TAGS*/
 h1 {
   font-family: "droidSansBold";
-  font-size: 1.4em;
+  font-size: 2em;
   color: #A3682A;
   padding-top: 20px;
 }
@@ -130,6 +40,127 @@ h2 {
   color: #A3682A;
 }
 
-.footer {
-  padding-top: 0px;
+/*HOMEPAGE BANNER*/
+
+.topBar {
+  background-color: #FBF1F0;
+  padding-top:5px;
+  padding-bottom: 35px;
+  margin-top:0px;
+  width:100%;
+  position:fixed;
+  z-index:+1;
+}
+
+/* MENU */
+
+#menuList {
+  overflow: hidden;
+  list-style-type: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width:100%;
+  position:fixed;
+  z-index:+2;
+}
+
+li a {
+  font-family: "droidSans";
+  float: right;
+  display: block;
+  padding-right: 50px;
+  text-decoration: none;
+  color: #B54321;
+}
+
+li a:active {
+  color: #ed26cc;
+}
+
+li a:hover {
+  color: #EA9F6B;
+}
+
+.banner {
+  position: relative;
+  top:0px;
+}
+
+.soil {
+  max-width: 100%;
+  position: relative;
+  margin-left: 0px;
+  margin-top:0px;
+  z-index: -2;
+}
+
+.logo {
+  width: 200px;
+  display:absolute;
+  float:right;
+  margin-top:-420px;
+  margin-left:auto;
+  margin-right:30px;
+}
+
+/*GRID CONTENT HOMEPAGE*/
+
+.gridContainerHomepage {
+  display: grid;
+  gap: 10px;
+  margin-right:10%;
+  margin-left:10%;
+  grid-template-columns: 40%, 40%;
+}
+
+.frontpageHeadline {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.frontpageText {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.frontpageImages {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  text-align: right;
+}
+
+/*GRID CONTENT CONTACT*/
+
+.gridContainerContact {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 15%, 60%, 15%;
+  margin-top:100px;
+}
+
+.bugBorderLeft {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.form {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+}
+
+.bugBorderRight {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.bug {
+  width: 40px;
+}
+
+/* FOOTER */
+
+
+footer {
+  padding-top: 100px;
 }
