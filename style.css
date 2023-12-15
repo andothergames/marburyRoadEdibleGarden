@@ -1,5 +1,3 @@
-/*COLOUR PALETTE*/
-
 
 /*FONTS*/
 
@@ -9,7 +7,6 @@
 }
 
 @font-face {
-
   font-family: 'droidSansBold';
   src: url(fonts/DroidSans-Bold.ttf);
 }
@@ -21,12 +18,12 @@ body {
   background-color: #FBF1F0;
   color: #782D16;
   font-size: 12pt;
-  width: 100%;
   margin: 0;
   padding: 0;
 }
 
 /*H TAGS*/
+
 h1 {
   font-family: "droidSansBold";
   font-size: 2em;
@@ -43,13 +40,15 @@ h2 {
 /*HOMEPAGE BANNER*/
 
 .topBar {
-  background-color: #FBF1F0;
-  padding-top:5px;
+  background-color: rgb(251, 241, 240, 0.8);
+  padding-top: 5px;
   padding-bottom: 35px;
-  margin-top:0px;
-  width:100%;
-  position:fixed;
-  z-index:+1;
+  padding-right: 30px;
+  margin-top: 0px;
+  margin-left: -30px;
+  width: 100%;
+  position: fixed;
+  z-index: +1;
 }
 
 /* MENU */
@@ -59,48 +58,51 @@ h2 {
   list-style-type: none;
   margin-top: 5px;
   margin-bottom: 5px;
-  width:100%;
-  position:fixed;
-  z-index:+2;
+  width: 100%;
+  position: fixed;
+  z-index: +2;
 }
 
 li a {
   font-family: "droidSans";
   float: right;
   display: block;
-  padding-right: 50px;
+  margin-right: 60px;
   text-decoration: none;
   color: #B54321;
 }
 
-li a:active {
-  color: #ed26cc;
-}
-
 li a:hover {
-  color: #EA9F6B;
+  color: #765c49;
 }
 
 .banner {
   position: relative;
-  top:0px;
+  display: grid;
+  top: 0px;
+}
+
+.soil,
+.logo {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .soil {
   max-width: 100%;
   position: relative;
   margin-left: 0px;
-  margin-top:0px;
+  margin-top: -60px;
   z-index: -2;
 }
 
 .logo {
   width: 200px;
-  display:absolute;
-  float:right;
-  margin-top:-420px;
-  margin-left:auto;
-  margin-right:30px;
+  display: relative;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: 40px;
+  z-index: -1;
 }
 
 /*GRID CONTENT HOMEPAGE*/
@@ -108,37 +110,39 @@ li a:hover {
 .gridContainerHomepage {
   display: grid;
   gap: 10px;
-  margin-right:10%;
-  margin-left:10%;
-  grid-template-columns: 40%, 40%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
-.frontpageHeadline {
+.homepageText {
   grid-column: 1;
   grid-row: 1;
+  width:100%;
 }
 
-.frontpageText {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.frontpageImages {
+.homepageImages {
   grid-column: 2;
-  grid-row: 1 / span 2;
-  text-align: right;
+  grid-row: 1;
+  width:100%;
+  padding-left: 20px;
 }
 
 /*GRID CONTENT CONTACT*/
 
-.gridContainerContact {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 15%, 60%, 15%;
-  margin-top:100px;
+#contact {
+  background-image: url("assets/soilBG.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
 }
 
-.bugBorderLeft {
+
+.gridContainerContact {
+  display: grid;
+  grid-template-columns: 25%, 50%, 25%;
+  margin-top: 20px;
+}
+
+.bugColLeft {
   grid-column: 1;
   grid-row: 1;
 }
@@ -147,15 +151,26 @@ li a:hover {
   grid-column: 2;
   grid-row: 1;
   text-align: center;
+  background-color: rgb(251, 241, 240, 1);
+  border-radius: 20px;
 }
 
-.bugBorderRight {
+.bugColRight {
   grid-column: 3;
   grid-row: 1;
 }
 
-.bug {
+.bugL, .bugR {
   width: 40px;
+  margin:10px
+}
+
+.bugL {
+  float:left;
+}
+
+.bugR {
+  float:right;
 }
 
 /* FOOTER */
