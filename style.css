@@ -59,7 +59,7 @@ nav {
 
 /* MENU */
 
-#menuList {
+.menu {
   overflow: hidden;
   list-style-type: none;
   margin-top: 5px;
@@ -83,17 +83,17 @@ nav li a:hover {
   color: #765c49;
 }
 
-/* BANNER */
+/* HEADER BANNER */
 
 
-.banner {
+header {
   position: relative;
   display: grid;
   top: 100px;
 }
 
 .soil,
-.banner a,
+header a,
 .title {
   grid-column: 1;
   grid-row: 1;
@@ -132,7 +132,7 @@ nav li a:hover {
 
 /*GRID CONTENT HOMEPAGE*/
 
-.gridContainerHomepage {
+.homepage {
   display: grid;
   grid-template-columns: (35%, 20%, 45%);
   column-gap: 20px;
@@ -250,44 +250,7 @@ nav li a:hover {
   margin-top:-100px;
 }
 
-.infoBannerSpacerL {
-  grid-column:1;
-  grid-row:2;
-  width:10%;
-}
-
-.infoBannerText1 {
-  grid-column:2;
-  grid-row:2;
-}
-
-.infoBannerText2 {
-  grid-column:3;
-  grid-row:2;
-}
-
-.infoBannerText3 {
-  grid-column:4;
-  grid-row:2;
-}
-
-.infoBannerText4 {
-  grid-column:5;
-  grid-row:2;
-}
-
-.infoBannerText5 {
-  grid-column:6;
-  grid-row:2;
-}
-
-.infoBannerSpacerR {
-  grid-column:7;
-  grid-row:2;
-  width:10%;
-}
-
-/*GRID CONTENT CONTACT*/
+/* CONTACT PAGE */
 
 #contact {
   background-image: url("assets/soilBG.png");
@@ -295,11 +258,10 @@ nav li a:hover {
   background-repeat: repeat-y;
 }
 
-
-.gridContainerContact {
+.contactpage {
   display: grid;
   grid-template-columns: 25%, 50%, 25%;
-  margin-top: 20px;
+  margin-top: 120px;
 }
 
 .bugColLeft {
@@ -307,7 +269,7 @@ nav li a:hover {
   grid-row: 1;
 }
 
-.form {
+form {
   grid-column: 2;
   grid-row: 1;
   text-align: center;
@@ -340,11 +302,25 @@ footer {
   padding-top: 100px;
   margin-right:10%;
   margin-left:10%;
-  padding-bottom:100px;
+  padding-bottom:60px;
 }
 
+.socials {
+  text-align:center;
+}
+.socials svg {
+  padding-right:80px;
+  margin-bottom:30px;
+  width:30px;
+}
 
+svg:hover {
+  fill:rgb(21, 180, 77);
+}
 
+.emailIcon {
+  padding-bottom:4px;
+}
 
 .links {
   display:grid;
@@ -399,10 +375,3 @@ svg {
   width:30px;
 }
 
-.socials {
-  text-align:center;
-}
-.socials svg {
-  padding-right:100px;
-  margin-bottom:30px;
-}
