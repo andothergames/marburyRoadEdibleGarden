@@ -249,7 +249,7 @@ main {
 
 .contactLogo {
   width: 200px;
-  margin: 10 auto 0 100px;
+  margin: 10px 0 0 12%;
   z-index: 1;
   position: sticky;
   top: 10px;
