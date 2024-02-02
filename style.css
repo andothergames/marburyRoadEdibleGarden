@@ -93,6 +93,9 @@ nav li a:hover {
 
 /* HEADER BANNER */
 
+.mobile {
+  visibility: hidden;
+}
 
 main {
   display: grid;
@@ -108,7 +111,9 @@ main {
 
 .soil {
   margin-top: -80px;
-  z-index: -2;
+  z-index: -3;
+  width: 100%;
+  height: 400px;
 }
 
 .logo {
@@ -149,12 +154,13 @@ main {
   position: relative;
 }
 
+
 .rightText {
   grid-column: 3;
   grid-row: 1;
   padding-top: 60px;
   max-width: 80%;
-  text-align:center;
+  text-align: center;
 }
 
 .leftText {
@@ -162,7 +168,7 @@ main {
   grid-row: 2;
   padding: 80px 0 0 80px;
   max-width: 480px;
-  text-align:center;
+  text-align: center;
 
 }
 
@@ -173,7 +179,7 @@ main {
   margin-left: auto;
   max-width: 400px;
   position: relative;
-  padding-right:20px;
+  padding-right: 20px;
 }
 
 .rightImage img,
@@ -371,4 +377,78 @@ svg:hover {
 
 .design {
   grid-column: 4;
+}
+
+/* MOBILE DESIGN CSS */
+
+@media only screen and (max-width: 600px) {
+
+  .desktop {
+    visibility: hidden !important;
+  }
+
+  .mobile {
+    visibility: visible !important;
+    width: 100%;
+  }
+
+  .homepage {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 20px;
+    position: static;
+  }
+
+  h1 {
+    padding: 0;
+  }
+
+  .rightText {
+    grid-column: 1;
+    grid-row: 1;
+    padding-top: 20px;
+    text-align: center;
+    min-width: 100%;
+  }
+
+  .leftImage {
+    grid-column: 1;
+    grid-row: 2;
+    top: 0px;
+    min-width: 100%;
+    padding: 0px;
+  }
+
+
+  .leftText {
+    grid-column: 1;
+    grid-row: 3;
+    max-width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .rightImage {
+    grid-column: 1;
+    grid-row: 4;
+    width: 100%;
+  }
+
+  .rightImage img,
+  .leftImage img {
+    position: relative;
+  }
+
+  .bugHigh {
+    top: 0px;
+    float: left;
+  }
+
+  .bugLow {
+    width: 40px;
+    position: relative;
+    bottom: 0px;
+    float: right;
+  }
+
 }
