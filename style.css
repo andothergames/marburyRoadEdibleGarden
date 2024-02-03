@@ -37,12 +37,6 @@ h1 {
   padding-top: 20px;
 }
 
-h2 {
-  font-family: "thasadithBold";
-  font-size: 1.2em;
-  color: #A3682A;
-}
-
 h5 {
   font-size: 0.9em;
   font-family: 'thasadithBold';
@@ -94,7 +88,7 @@ nav li a:hover {
 /* HEADER BANNER */
 
 .mobile {
-  visibility: hidden;
+  display: none;
 }
 
 main {
@@ -125,7 +119,7 @@ main {
 }
 
 .title {
-  color: white;
+  color: #ffffff;
   font-family: "londrinaOutline";
   font-size: 2.2em;
   text-shadow: 2px 2px 4px #000000;
@@ -384,10 +378,11 @@ svg:hover {
 @media only screen and (max-width: 600px) {
 
   .desktop {
-    visibility: hidden !important;
+    display: none !important;
   }
 
   .mobile {
+    display:block;
     visibility: visible !important;
     width: 100%;
   }
@@ -449,6 +444,58 @@ svg:hover {
     position: relative;
     bottom: 0px;
     float: right;
+  }
+
+  .infoGrid {
+    display:grid;
+    grid-template-columns: auto;
+    text-align: center;
+    row-gap:6px;
+    background-color: #fcf5f3;
+    z-index: -1;
+    padding-bottom:100px;
+    margin-top:-48px;
+  }
+
+  h2 {
+    font-family: "thasadithBold";
+    font-size: 1.2em;
+    color: #A3682A;
+    position:absolute;
+    padding-right: auto;
+    padding-left: auto;
+    text-align: center;
+    top:50px;
+  }
+
+  .infoHeader {
+    position:relative;
+    display:block;
+  }
+
+  .tile {
+    width:40%;
+  }
+
+  .arrow {
+    width: 10%;
+  }
+
+  .infoGridBG {
+    width:100%;
+    z-index: -2;
+    position:relative;
+  }
+
+  .infoGrid p {
+    background-color: rgb(194, 221, 194);
+    color: black;
+    border-radius: 15px;
+    font-family: 'thasadithRegular';
+    text-align: center;
+    margin: 0px auto 4px;
+    padding: 10px;
+    max-width: 140px;
   }
 
 }
