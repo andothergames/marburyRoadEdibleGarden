@@ -326,7 +326,7 @@ svg:hover {
 
 .links {
   display: grid;
-  grid-template-columns: (25%, 25%, 25%, 25%);
+  grid-template-columns: repeat(4, 25%);
   gap: 10px;
 }
 
@@ -334,7 +334,7 @@ svg:hover {
 .friends,
 .design {
   margin-top: 20px;
-  padding-left: 20px;
+  padding-left: 30px;
   box-shadow: -5px 0px 3px -3px #FBF1F1;
 }
 
@@ -355,22 +355,8 @@ svg:hover {
 }
 
 .RHS {
-  grid-column: 1;
   text-align: center;
-  max-width: 240px;
-  margin: 0px auto
-}
-
-.articles {
-  grid-column: 2;
-}
-
-.friends {
-  grid-column: 3;
-}
-
-.design {
-  grid-column: 4;
+  margin-right: 10px;
 }
 
 /* MOBILE DESIGN CSS */
@@ -382,7 +368,7 @@ svg:hover {
   }
 
   .mobile {
-    display:block;
+    display: block;
     visibility: visible !important;
     width: 100%;
   }
@@ -447,34 +433,35 @@ svg:hover {
   }
 
   .infoGrid {
-    display:grid;
+    display: grid;
     grid-template-columns: auto;
     text-align: center;
-    row-gap:6px;
+    row-gap: 6px;
     background-color: #fcf5f3;
     z-index: -1;
-    padding-bottom:100px;
-    margin-top:-48px;
+    padding-bottom: 100px;
+    margin-top: -48px;
+    padding-top: 20px;
   }
 
   h2 {
     font-family: "thasadithBold";
     font-size: 1.2em;
-    color: #A3682A;
-    position:absolute;
-    padding-right: auto;
-    padding-left: auto;
     text-align: center;
-    top:50px;
+    color: #A3682A;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
   }
 
   .infoHeader {
-    position:relative;
-    display:block;
+    position: relative;
+    display: block;
   }
 
   .tile {
-    width:40%;
+    width: 40%;
   }
 
   .arrow {
@@ -482,9 +469,9 @@ svg:hover {
   }
 
   .infoGridBG {
-    width:100%;
+    width: 100%;
     z-index: -2;
-    position:relative;
+    position: relative;
   }
 
   .infoGrid p {
@@ -497,5 +484,31 @@ svg:hover {
     padding: 10px;
     max-width: 140px;
   }
+
+  footer {
+    padding: 40px 0;
+  }
+
+  .socials svg {
+    padding: 0px 20px;
+    margin-bottom: 30px;
+    width: 30px;
+  }
+
+  .links {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: auto;
+    row-gap: 10px;
+  }
+
+  .articles,
+  .friends,
+  .design {
+    text-align:center;
+    margin-top: 20px;
+    padding: 20px 0 20px 30px;
+    box-shadow: 0px -5px 3px -3px #FBF1F1;
+  }
+
 
 }
