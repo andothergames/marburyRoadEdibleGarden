@@ -55,7 +55,7 @@ h5 {
 
 nav {
   background-color: #FBF1F1;
-  padding: 15px 0 55px;
+  padding: 15px 0 45px;
   width: 100%;
   position: fixed;
   z-index: 3;
@@ -527,5 +527,34 @@ svg:hover {
     box-shadow: 0px -5px 3px -3px #FBF1F1;
   }
 
+  .menuIcon {
+    display: block;
+    position: fixed;
+    top: 16px;
+    right: 10%;
+    z-index: 4;
+    width: 40px;
+  }
 
+
+  .dropdownContent {
+    display: none;
+    background-color: #f9f9f9;
+    max-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    float:right;
+    margin: 50px 20px;
+    padding: 10px;
+  }
+
+  .dropdownContent a {
+    text-decoration:none;
+    color:#A3682A;
+  }
+
+  .dropdown:hover .dropdownContent {
+    display: grid;
+  }
 }
+
