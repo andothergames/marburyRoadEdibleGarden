@@ -141,7 +141,7 @@ main {
 }
 
 .bean1 {
-  min-width: 380px;
+  min-width: 300px;
 }
 
 .leftImage {
@@ -471,6 +471,10 @@ svg:hover {
     top: 50px;
     left: 0;
     right: 0;
+  }
+
+  .topPadding {
+    padding-top:40px;
   }
 
   .infoHeader {
